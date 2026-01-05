@@ -55,7 +55,7 @@ pi-zero-web-project/
 
 ## Running Locally (x86)
 
-```bash
+```sh
 go run .
 ```
 
@@ -69,7 +69,7 @@ http://localhost:8080
 
 ## Building for ARM64
 
-```bash
+```sh
 GOOS=linux GOARCH=arm64 CGO_ENABLED=0 go build -o app-arm64
 ```
 
@@ -77,14 +77,14 @@ GOOS=linux GOARCH=arm64 CGO_ENABLED=0 go build -o app-arm64
 
 ## Running in Docker (ARM64)
 
-```bash
+```sh
 docker compose build
 docker compose up
 ```
 
 or only the debug container:
 
-```bash
+```sh
 docker compose up debug
 ```
 
@@ -94,7 +94,7 @@ docker compose up debug
 
 #### 1. Start the debug container
 
-```bash
+```sh
 docker compose up debug
 ```
 
@@ -117,7 +117,7 @@ Press Stop in VSCode (detaches debugger)
 
 Stop container manually:
 
-```bash
+```sh
 docker compose stop debug
 ```
 
@@ -133,7 +133,7 @@ docker compose stop debug
 
 Example:
 
-```bash
+```sh
 curl http://localhost:8080/ping
 ```
 
