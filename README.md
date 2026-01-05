@@ -41,7 +41,9 @@ pi-zero-web-project/
 ├── Dockerfile.debug
 ├── go.mod
 ├── go.sum
-├── main.go
+├── cmd/
+│   └── server/
+│      └── main.go
 ├── internal/
 │   └── routes/
 │       └── routes.go
