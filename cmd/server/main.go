@@ -6,6 +6,8 @@ import (
 	"github.com/pablom07/pi-gin-app/internal/routes"
 )
 
+// main is the entry point of the service.
+// It sets up the routes and starts the server listening on port 8080.
 func main() {
 	r := routes.Setup()
 
