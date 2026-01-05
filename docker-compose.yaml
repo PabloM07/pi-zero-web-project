@@ -1,0 +1,17 @@
+services:
+  debug:
+    build:
+      context: .
+      dockerfile: Dockerfile.debug
+    ports:
+      - "8080:8080"
+      - "2345:2345"
+
+  pi-zero:
+    platform: linux/arm64   # ← acá va
+    build:
+      context: .
+      dockerfile: Dockerfile.arm64
+    image: pi-zero-runtime
+    ports:
+      - "8081:8080"
