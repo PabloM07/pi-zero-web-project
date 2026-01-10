@@ -13,5 +13,8 @@ services:
       context: .
       dockerfile: Dockerfile.arm64
     image: pi-zero-runtime
+    cpus: "0.5"
+    mem_limit: 512m
+    memswap_limit: 512m
     ports:
       - "8081:8080"
