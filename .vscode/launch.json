@@ -10,15 +10,6 @@
       "env": {
         "GIN_MODE": "debug"
       }
-    },
-    {
-      "name": "Attach to Pi Zero (manual)",
-      "type": "go",
-      "request": "attach",
-      "mode": "remote",
-      "remotePath": "/app",
-      "host": "127.0.0.1",
-      "port": 2345
     }
   ]
 }
