@@ -1,0 +1,10 @@
+.git
+.gitignore
+.vscode
+README.md
+docs
+*.md
+node_modules
+dist
+bin
+tmp
