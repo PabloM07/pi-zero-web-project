@@ -1,10 +1,17 @@
 package routes
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+)
 
 // Setup returns a new gin.Engine with the routes for the service.
-func Setup() *gin.Engine {
-	r := gin.Default()
+func Setup(r *gin.Engine) *gin.Engine {
+
+	r.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "Hello from Raspberry Pi Zero 2 W (emulated)!",
+		})
+	})
 
 	// Ping endpoint
 	// @Summary Ping the service
